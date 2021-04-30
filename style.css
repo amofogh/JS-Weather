@@ -1,0 +1,154 @@
+@import "https://fonts.google.com/download?family=Poiret%20One";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poiret One;
+  outline: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.None {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background: #a64253;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+}
+
+.weather {
+  width: 40%;
+  height: 40%;
+  background: transparent;
+  border-radius: 20px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3),
+    0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  display: grid;
+  grid-template-areas: "icon icon icon" "temp temp Date";
+}
+
+.icon {
+  background: #fafafa;
+  grid-area: icon;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.icon-W {
+  color: #000;
+}
+
+.temp img {
+  position: absolute;
+  right: 0;
+  align-self: flex-start;
+}
+
+.temp {
+  color: #ededed;
+  grid-area: temp;
+  background: #080705;
+  border-bottom-left-radius: 20px;
+  position: relative;
+}
+
+.temp p {
+  margin: 0 1rem;
+  font-size: 1.5rem;
+}
+
+.temp-C {
+  font-size: 3.5rem !important;
+}
+
+.Date {
+  color: #ededed;
+  grid-area: Date;
+  background: #70c1b3;
+  border-bottom-right-radius: 20px;
+  padding: 0 2rem;
+  font-size: 2rem;
+}
+
+section {
+  width: 25%;
+  position: relative;
+}
+
+.get-city {
+  border: none;
+  background: #fafafa;
+  color: #6d6d6d;
+  padding: 1rem;
+  height: 80%;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 10px;
+}
+
+.btn {
+  position: absolute;
+  right: 0;
+  background: #70c1b3;
+  height: 80%;
+  margin-bottom: 1rem;
+  width: 20%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.guide {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 2rem;
+  color: #fafafa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.guide:hover {
+  color: #70c1b3;
+}
+
+.warning {
+  color: #ca0b00;
+  font-size: 2rem;
+  right: 0;
+  position: absolute;
+  top: 0;
+  align-self: start;
+  margin: 0.5rem;
+}
+
+.Allow-loc {
+  margin: 1rem;
+  color: #fafafa;
+  position: relative;
+}
+
+.Allow {
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+#Close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-size: .7rem;
+}
