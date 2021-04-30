@@ -1,9 +1,12 @@
-@import "https://fonts.google.com/download?family=Poiret%20One";
+@font-face {
+  font-family: 'poiretone';
+  src: url(PoiretOne-Regular.ttf);
+}
 
 * {
   margin: 0;
   padding: 0;
-  font-family: Poiret One;
+  font-family: 'poiretone';
   outline: none;
 }
 
